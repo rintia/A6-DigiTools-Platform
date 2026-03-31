@@ -3,7 +3,7 @@ const NavBar = () => {
       <div className="navbar sticky z-10 max-w-7xl mx-auto">
         <div className="navbar-start">
           <div className=" font-bold text-xl">
-             <h1 className="text-3xl text-transparent bg-clip-text bg-linear-to-r from-[#text-transparent bg-clip-text bg-linear-to-r from-[#4F39F6] to-[#9514FA]  ">DigiTools</h1>
+             <h1 className="text-3xl text-transparent bg-clip-text bg-linear-to-r from-[#4F39F6] to-[#9514FA]  ">DigiTools</h1>
           </div>
         </div>
         <div className="navbar-center hidden md:flex">
