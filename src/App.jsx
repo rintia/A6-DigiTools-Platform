@@ -17,6 +17,8 @@ const productsPromise = getProducts()
 
 function App() {
 
+  const [cart, setCart] = useState([])
+
   const [activeTab, setActiveTab] = useState('products')
 
   return (
@@ -34,8 +36,8 @@ function App() {
         <input onClick={()=> setActiveTab('cart')} type="radio" name="my_tabs_1" className={`tab rounded-full ${activeTab === 'cart' && 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'}`} aria-label="Cart" />
         
       </div>
-      {activeTab === 'products' && <Products productsPromise={productsPromise}/>}
-      {activeTab === 'cart' && <Cart/>}
+      {activeTab === 'products' && <Products productsPromise={productsPromise} cart={cart} setCart={setCart}/>}
+      {activeTab === 'cart' && <Cart cart={cart} setCart={setCart}/>}
       
       <Footer />
     </>
