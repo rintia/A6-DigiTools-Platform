@@ -9,6 +9,7 @@ import Products from './components/Products'
 import Rating from './components/Rating'
 import Workflow from './components/Workflow'
 import Footer from './components/Footer'
+import GetStarted from './components/GetStarted'
 
 const getProducts = async () => {
   const res = await fetch('/products.json')
@@ -40,6 +41,7 @@ function App() {
       </div>
       {activeTab === 'products' && <Products productsPromise={productsPromise} cart={cart} setCart={setCart}/>}
       {activeTab === 'cart' && <Cart cart={cart} setCart={setCart}/>}
+      <GetStarted/>
       <Workflow></Workflow>
       <Footer/>
     </>
