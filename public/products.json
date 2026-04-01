@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with ease.\nOptimized for ATS and recruiters.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "/design-tool.png"
+  },
+  {
+    "id": 2,
+    "name": "AI Cover Letter Generator",
+    "description": "Generate tailored cover letters instantly.\nPowered by advanced AI.",
+    "price": 5,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["AI writing", "Job-specific customization", "Download as PDF"],
+    "icon": "/operation.png"
+  },
+  {
+    "id": 3,
+    "name": "Portfolio Website Kit",
+    "description": "Build a stunning portfolio in minutes.\nNo coding required.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Drag & drop builder", "Responsive design", "Custom domain support"],
+    "icon": "/portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "Job Tracker Dashboard",
+    "description": "Track job applications efficiently.\nStay organized and productive.",
+    "price": 7,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Application tracking", "Status updates", "Reminders"],
+    "icon": "/shopping-cart.png"
+  },
+  {
+    "id": 5,
+    "name": "Interview Prep Toolkit",
+    "description": "Prepare for interviews with confidence.\nIncludes mock questions and tips.",
+    "price": 19,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Mock interviews", "Common Q&A", "Expert tips"],
+    "icon": "/social-media.png"
+  },
+  {
+    "id": 6,
+    "name": "LinkedIn Profile Optimizer",
+    "description": "Enhance your LinkedIn presence.\nGet noticed by recruiters.",
+    "price": 6,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Profile analysis", "Keyword optimization", "Headline generator"],
+    "icon": "/writing_2327400 1.png"
+  },
+  {
+    "id": 7,
+    "name": "Freelancer Starter Pack",
+    "description": "Kickstart your freelance career.\nAll tools in one bundle.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Proposal templates", "Client tracker", "Invoice generator"],
+    "icon": "/operation.png"
+  },
+  {
+    "id": 8,
+    "name": "Skill Assessment Tests",
+    "description": "Test and showcase your skills.\nImprove your job readiness.",
+    "price": 12,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Multiple tests", "Instant results", "Performance insights"],
+    "icon": "/design-tool.png"
+  }
+]

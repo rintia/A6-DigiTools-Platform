@@ -28,8 +28,8 @@ const Banner = () => {
                     </p>
 
                     <div className="flex flex-wrap gap-4 pt-4">
-                    <btn className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA]  rounded-full text-white">Explore Products</btn>
-                    <btn className="btn btn-outline border-violet-400 text-transparent bg-clip-text bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full"><CiPlay1 className="text-violet-400 text-2xl font-semibold"/> Watch Demo</btn>
+                    <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA]  rounded-full text-white">Explore Products</button>
+                    <button className="btn btn-outline border-violet-400 text-transparent bg-clip-text bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full"><CiPlay1 className="text-violet-400 text-2xl font-semibold"/> Watch Demo</button>
                     </div>
 
                 </div>

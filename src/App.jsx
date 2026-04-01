@@ -8,6 +8,13 @@ import NavBar from './components/Navbar'
 import Products from './components/Products'
 import Rating from './components/Rating'
 
+const getProducts = async () => {
+  const res = await fetch('/products.json')
+  return res.json()
+}
+
+const productsPromise = getProducts()
+
 function App() {
 
   const [activeTab, setActiveTab] = useState('products')
@@ -27,7 +34,7 @@ function App() {
         <input onClick={()=> setActiveTab('cart')} type="radio" name="my_tabs_1" className={`tab rounded-full ${activeTab === 'cart' && 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'}`} aria-label="Cart" />
         
       </div>
-      {activeTab === 'products' && <Products/>}
+      {activeTab === 'products' && <Products productsPromise={productsPromise}/>}
       {activeTab === 'cart' && <Cart/>}
       
       <Footer />

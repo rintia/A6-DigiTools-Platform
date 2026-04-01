@@ -1,9 +1,12 @@
-import React from 'react';
-
-const Products = () => {
+import React, { use } from 'react';
+import ProductCard from './ProductCard'
+const Products = ({productsPromise}) => {
+    const products = use(productsPromise)
+    console.log(products);
     return (
-        <div>
-            <h1>Products</h1>
+        <div className='grid md:grid-cols-3 gap-4 max-w-7xl mx-auto'>
+            
+            {products.map(product => <ProductCard product={product} key={product.id}/>)}
         </div>
     );
 };
