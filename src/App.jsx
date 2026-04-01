@@ -23,7 +23,7 @@ function App() {
 
   return (
     <>
-      <NavBar />
+      <NavBar cart={cart} />
       <Banner />
       <Rating />
       <div className='text-center mx-auto max-w-6xl mb-12'>
@@ -33,7 +33,7 @@ function App() {
       {/* name of each tab group should be unique */}
       <div className="tabs tabs-box justify-center gap-5 bg-transparent border-none mb-12">
         <input onClick={()=> setActiveTab('products')} type="radio" name="my_tabs_1" className={`tab rounded-full ${activeTab === 'products' && 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'}`} aria-label="Products" defaultChecked />
-        <input onClick={()=> setActiveTab('cart')} type="radio" name="my_tabs_1" className={`tab rounded-full ${activeTab === 'cart' && 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'}`} aria-label="Cart" />
+        <input onClick={()=> setActiveTab('cart')} type="radio" name="my_tabs_1" className={`tab rounded-full ${activeTab === 'cart' && 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'}`} aria-label={`Cart(${cart.length})`} />
         
       </div>
       {activeTab === 'products' && <Products productsPromise={productsPromise} cart={cart} setCart={setCart}/>}

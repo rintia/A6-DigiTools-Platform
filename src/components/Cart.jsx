@@ -8,6 +8,9 @@ const Cart = ({cart, setCart}) => {
         const filteredCart = cart.filter(item=> item.id !== id)
         setCart(filteredCart)
     }
+    const handleCheckout =()=>{
+        setCart([])
+    }
 
     return (
         <div className='max-w-7xl mx-auto mb-20'>
@@ -33,7 +36,7 @@ const Cart = ({cart, setCart}) => {
             <h1>Total:</h1>
            <h1>${totalPrice}</h1>
            </div>
-           <button className="btn  bg-linear-to-r from-[#4F39F6] to-[#9514FA]  rounded-full text-white btn-block">Proceed to Checkout</button>
+           <button onClick={handleCheckout} className="btn  bg-linear-to-r from-[#4F39F6] to-[#9514FA]  rounded-full text-white btn-block">Proceed to Checkout</button>
                 </div>
             }
           
