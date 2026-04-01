@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner'
 import Cart from './components/Cart'
-
+import Pricing from './components/Pricing'
 import NavBar from './components/Navbar'
 import Products from './components/Products'
 import Rating from './components/Rating'
@@ -42,6 +42,7 @@ function App() {
       {activeTab === 'products' && <Products productsPromise={productsPromise} cart={cart} setCart={setCart}/>}
       {activeTab === 'cart' && <Cart cart={cart} setCart={setCart}/>}
       <GetStarted/>
+      <Pricing/>
       <Workflow></Workflow>
       <Footer/>
     </>

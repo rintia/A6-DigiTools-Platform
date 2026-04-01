@@ -22,7 +22,7 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div className="md:col-span-2">
-                        <h3 className="text-red-400 font-semibold mb-6 text-lg">Product</h3>
+                        <h3 className="text-violet-400 font-semibold mb-6 text-lg">Product</h3>
                         <ul className="space-y-4 text-zinc-400">
 
                             <li><a href="#" className="hover:text-white transition">Pricing</a></li>
@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
 
                     <div className="md:col-span-2">
-                        <h3 className="text-red-400 font-semibold mb-6 text-lg">Company</h3>
+                        <h3 className="text-violet-400 font-semibold mb-6 text-lg">Company</h3>
                         <ul className="space-y-4 text-zinc-400">
                             <li><a href="#" className="hover:text-white transition">About Us</a></li>
                             <li><a href="#" className="hover:text-white transition">Blog</a></li>
@@ -42,7 +42,7 @@ const Footer = () => {
                     </div>
 
                     <div className="md:col-span-3">
-                        <h3 className="text-red-400 font-semibold mb-6 text-lg">Social links</h3>
+                        <h3 className="text-violet-400 font-semibold mb-6 text-lg">Social links</h3>
                         <div className="grid grid-flow-col gap-4 text-white">
                             <a>
                                 <svg
@@ -88,7 +88,7 @@ const Footer = () => {
                     </div>
 
                     <div className="flex gap-6">
-                        <a href="#" className="hover:text-red-400 transition">Made with ❤️ for DigiTools enthusiasts</a>
+                        <a href="#" className="hover:text-violet-400 transition">Made with ❤️ for DigiTools enthusiasts</a>
                     </div>
                 </div>
             </div>
