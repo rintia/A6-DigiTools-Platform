@@ -3,10 +3,12 @@ import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner'
 import Cart from './components/Cart'
-import Footer from './components/Footer'
+
 import NavBar from './components/Navbar'
 import Products from './components/Products'
 import Rating from './components/Rating'
+import Workflow from './components/Workflow'
+import Footer from './components/Footer'
 
 const getProducts = async () => {
   const res = await fetch('/products.json')
@@ -38,8 +40,8 @@ function App() {
       </div>
       {activeTab === 'products' && <Products productsPromise={productsPromise} cart={cart} setCart={setCart}/>}
       {activeTab === 'cart' && <Cart cart={cart} setCart={setCart}/>}
-      
-      <Footer />
+      <Workflow></Workflow>
+      <Footer/>
     </>
   )
 }
