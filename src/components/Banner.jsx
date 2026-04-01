@@ -38,7 +38,7 @@ const Banner = () => {
                 <div className="relative flex justify-center lg:justify-end">
                     <div className="relative">
                         <img
-                            className="relative h-130 w-auto object-contain drop-shadow-2xl rounded-3xl"
+                            className="relative h-130 lg:w-auto w-72 object-contain drop-shadow-2xl rounded-3xl"
                             src={BannerImage}
                             alt="AI Models Banner"
                         />

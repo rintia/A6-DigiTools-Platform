@@ -29,7 +29,7 @@ const Cart = ({cart, setCart}) => {
                     <img className='w-12 h-12' src={item.icon} alt="" />
                 <div>
                     <h1 className='text-2xl font-semibold'>{item.name}</h1>
-                <h1>${item.price}/month</h1>
+                <h1>${item.price}/{item.period}</h1>
                 </div>
                 </div>
                 <button onClick={()=> handleRemove(item.id)} className='btn btn-ghost text-red-500 font-semibold'>Remove</button>

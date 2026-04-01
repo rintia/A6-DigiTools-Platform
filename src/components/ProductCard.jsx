@@ -28,7 +28,7 @@ const ProductCard = ({product, cart, setCart}) => {
       <h2 className="text-3xl font-bold">{product.name}</h2>
       
       <p>{product.description}</p>
-      <h1 className="text-xl">${product.price}/month</h1>
+      <h1 className="text-xl">${product.price}/{product.period}</h1>
     </div>
     <ul className="mt-6 flex flex-col gap-2 text-xs">
         {product.features.map(f=><li>
